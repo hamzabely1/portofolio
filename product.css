@@ -1,289 +1,91 @@
-.container {
-  max-width: 960px;
-}
 
-/*
- * Custom translucent site header
- */
 
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #8e8e8e;
-  transition: color .15s ease-in-out;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
+.cards{
+  height:350px;
   width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  transform: rotate(30deg);
-}
-.sfondo{
-  background-color: wheat;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px; 
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
-}
+svg{
+height:250px;
+width: 200px;
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
 }
 
 
-/*
- * Extra utilities
- */
-
-.flex-equal > * {
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
+@keyframes circle {
+  to{ 
+    stroke-dashoffset: 20;
   }
 }
 
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
 
-    
-    .hamza{
-        display: flex;
-        padding: 2%;
-        
-    }
-    
-    
-    .presentazione{
-        height: 500px;
-        width: 1100px;
-        display: flex;
-        padding: 10%;
-        justify-content: center;
-        align-items: center;
-        border: solid orange;
-        border-radius: 10px;
-     
-    }
-    .pres{
-        display: flex;
-        justify-content: center;
-    }
-    #text{
-    color: powderblue;
-    }
-    #textorange{
-        color: orange;
-    }
-    
-    /* cometence*/
-    
-    .competence{
-        height: 500px;
-        width: 1100px;
-        margin: 5px;
-        background-color: white;
-        border-radius: 15px;
-    
-    }
-    .bella{
-      
-      padding: 20px;
-    }
-    .div33{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .html{
-        height: 50px;
-        width: 700px;
-        border: solid black;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin: 2%;  
-    }
-    .com{
-        background-color: orange;
-    }
-    .css{
-         height: 50px;
-        width: 700px;
-    border: solid black;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin: 2%;
-    }
-    .css1{
-        height: 45px;
-        width: 300px;
-        display: flex;
-        align-items: center;
-        justify-content:space-between ;
-        background-color: orange;
-        
-        border-radius: 10px;
-    }
-    .php{
-        height: 50px;
-        width: 700px;
-        border: solid black;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin: 2%;
-    }
-    .php1{
-        height: 45px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:space-between ;
-       
-        
-        border-radius: 10px;
-    }
-    .js{
-        height: 50px;
-        width: 700px;
-        border: solid black;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        margin: 1%;
-    }
-    .js1{
-        height: 45px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:space-between ;
-        
-        
-        border-radius: 10px;
-    }
-    #textnoir{
-        color: black;
-        padding: 1%;
-    }
-    
-    .centro{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .com{
-        height: 45px;
-        width: 400px;
-        display: flex;
-        align-items: center;
-        justify-content:space-between ;
-        border-radius: 10px;
-    }
-    /*card*/
-    
-    .card{
-    width: 550px;
-    height: 650px;
-    color: white;
-    border: solid orange;
-    border-radius: 10px;
-    background: none;
-    padding: 10px;
-    }
-    #backn {
-        background-color: black;
-        width: 200px;
-        height: 200px;
-        border-radius: 15px;
-        padding: 5px;
-    }
-    
-    .flex{
-        display: flex;
-        justify-content: space-between;
-    }
-    .cardhome{
-        display: flex;
-        justify-content: center;
-        
-    }
-    h3{
-        display: flex;
-        justify-content: center;
-    }
- 
+@media only screen and (max-width: 600px) {
+  .image {
+display: none;
 
-    .qua {
-      background-color: black;
-      width: 250px;
-      height: 40px;
-      border-radius: 15px;
-      border: solid white;
-    
-    }
-    .qua1 {
-   
-      background-color: black;
-      width: 250px;
-      height: 40px;
-      border-radius: 15px;
-      border: solid black;
-    
-    }
-    .qua2 {
-   
-      background-color: black;
-      width: 50px;
-      height: 40px;
-      border-radius: 15px;
-      border: solid rgb(20, 18, 18);
-    
-    }
+  }
+}
 
-   
-    
-    
-    
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 5px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0%{
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
